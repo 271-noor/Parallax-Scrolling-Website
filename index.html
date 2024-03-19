@@ -6,30 +6,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Parallax Website</title>
 </head>
-<body class="box-border font-sans bg-gradient-to-t from-[#2b1055] to-[#7597de] min-h-[100vh]">
+<body class="box-border font-sans bg-gradient-to-t from-[#2b1055] to-[#7597de] min-h-[100vh] overflow-x-hidden">
     
-    <header class="absolute px-16 py-6 items-center justify-between flex w-full">
-        <a href="#" class="font-bold no-underline text-white uppercase text-xl tracking-wider">Logo</a>
+    <header id="header" class="z-10 absolute px-16 py-6 items-center justify-between flex w-full">
+        <a href="#" class="font-bold no-underline text-white uppercase text-2xl tracking-wider">Logo</a>
         
         <ul class="flex justify-center items-center">
 
-            <li class="list-none ml-12 py-1 rounded-xl hover:bg-[#668bda]">
+            <li class="list-none ml-12 py-1 rounded-xl hover:bg-[#668bda] transition duration-300 ease-in transform hover:-translate-x-2">
                 <a href="#" class="px-4 py-4 font-bold no-underline text-white ">
                     Home
                 </a>
             </li>
 
-            <li class="list-none ml-12 py-1 rounded-xl hover:bg-[#668bda]">
+            <li class="list-none ml-12 py-1 rounded-xl hover:bg-[#668bda] transition duration-300 ease-in transform hover:-translate-x-2">
                 <a href="#" class="px-4 py-4 font-bold no-underline text-white">
                     About Us
                 </a>
             </li>
-            <li class="list-none ml-12 py-1 rounded-xl hover:bg-[#668bda]">
+            <li class="list-none ml-12 py-1 rounded-xl hover:bg-[#668bda] transition duration-300 ease-in-out transform hover:-translate-x-2">
                 <a href="#" class="px-4 py-4 font-bold no-underline text-white">
                     Work
                 </a>
             </li>
-            <li class="list-none ml-10 py-1 rounded-xl hover:bg-[#668bda]">
+            <li class="list-none ml-10 py-1 rounded-xl hover:bg-[#668bda] transition duration-300 ease-in-out transform hover:-translate-x-2">
                 <a href="#" class="px-4 py-4 font-bold no-underline text-white">
                     Contact
                 </a>
@@ -37,5 +37,89 @@
         
         </ul>
     </header>
+    <section class="relative overflow-hidden before:[contents absolute bottom-0 w-full bg-gradient-to-t from-[#fff] to-[#1c0522] bg-transparent z-[1000]]">
+        <img src="stars.png" id="stars" class="target:shadow-3xl absolute object-cover ">
+        <img src="moon.png" id="moon" class=" absolute object-cover">
+        <img src="mountains_behind.png" id="mountains_behind" class="absolute object-cover">
+
+        <h2 id="text" class="absolute text-white z-10 whitespace-nowrap
+         text-[7.5vw] "
+        >
+            Moon Light
+        </h2>
+        <a href="#sec" id="btn" class="no-underline
+        transform translate-y-[100px] px-11 rounded inline-block text-xl bg-white text-[#2b1055] z-[9]">Explore</a>
+        
+        <img src="mountains_front.png" id="mauntains_front" class="absolute object-cover z-10">
+    </section>
+    
+    <div class="relative -z-10 py-3 px-4 bg-[#1c0522]">
+        <h2 class="text-3xl mb-[10px] text-white">Parallax Scrolling Effects</h2>
+        <p id="sec" class="text-white text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Provident id dolorum iste accusantium ab nam suscipit. 
+             Blanditiis libero nisi recusandae molestiae repudiandae
+             numquam nulla quia voluptatem, nesciunt facere odit velit similique quam,
+             consectetur cum quidem architecto ad labore totam nihil dicta aut et ipsum
+             quas! Perferendis unde cumque id explicabo labore laudantium illo eius ducimus
+             consequuntur quos molestiae iusto eum architecto deserunt, ex impedit doloremque
+             sit molestias, eaque tenetur? Fugiat repudiandae commodi aut dolor laudantium
+             esse eaque quas sint et autem natus dicta illum a, facilis voluptatem hic quo, 
+             cumque sequi. Corrupti, enim delectus similique nostrum rem quibusdam explicabo vero.
+             <br> <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Provident id dolorum iste accusantium ab nam suscipit. 
+             Blanditiis libero nisi recusandae molestiae repudiandae
+             numquam nulla quia voluptatem, nesciunt facere odit velit similique quam,
+             consectetur cum quidem architecto ad labore totam nihil dicta aut et ipsum
+             quas! Perferendis unde cumque id explicabo labore laudantium illo eius ducimus
+             consequuntur quos molestiae iusto eum architecto deserunt, ex impedit doloremque
+             sit molestias, eaque tenetur? Fugiat repudiandae commodi aut dolor laudantium
+             esse eaque quas sint et autem natus dicta illum a, facilis voluptatem hic quo, 
+             cumque sequi. Corrupti, enim delectus similique nostrum rem quibusdam explicabo vero.
+             <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Provident id dolorum iste accusantium ab nam suscipit. 
+             Blanditiis libero nisi recusandae molestiae repudiandae
+             numquam nulla quia voluptatem, nesciunt facere odit velit similique quam,
+             consectetur cum quidem architecto ad labore totam nihil dicta aut et ipsum
+             quas! Perferendis unde cumque id explicabo labore laudantium illo eius ducimus
+             consequuntur quos molestiae iusto eum architecto deserunt, ex impedit doloremque
+             sit molestias, eaque tenetur? Fugiat repudiandae commodi aut dolor laudantium
+             esse eaque quas sint et autem natus dicta illum a, facilis voluptatem hic quo, 
+             cumque sequi. Corrupti, enim delectus similique nostrum rem quibusdam explicabo vero.
+             <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Provident id dolorum iste accusantium ab nam suscipit. 
+             Blanditiis libero nisi recusandae molestiae repudiandae
+             numquam nulla quia voluptatem, nesciunt facere odit velit similique quam,
+             consectetur cum quidem architecto ad labore totam nihil dicta aut et ipsum
+             quas! Perferendis unde cumque id explicabo labore laudantium illo eius ducimus
+             consequuntur quos molestiae iusto eum architecto deserunt, ex impedit doloremque
+             sit molestias, eaque tenetur? Fugiat repudiandae commodi aut dolor laudantium
+             esse eaque quas sint et autem natus dicta illum a, facilis voluptatem hic quo, 
+             cumque sequi. Corrupti, enim delectus similique nostrum rem quibusdam explicabo vero.
+             
+            </p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars')
+        let moon = document.getElementById('moon')
+        let mountains_behind = document.getElementById('mountains_behind')
+        let text = document.getElementById('text')
+        letbtn = document.getElementById('btn')
+        let mountains_front = document.getElementById('mountains_front')
+        let header = document.querySelector('header');
+        
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value + 0.25 + 'px';
+            moon.style.top = value + 1.05 + 'px';
+            mountains_behind.style.top = value + 0.5 + 'px';
+            mountains_front.style.top = value + 0 + 'px';
+            text.style.marginRight = value + 4 + 'px';
+            text.style.margintop = value + 1.5 + 'px';
+            btn.style.margintop = value + 1.5 + 'px';
+            header.style.top = value + 0.5 + 'px';
+        })
+    </script>
+
 </body>
 </html>
